@@ -2,14 +2,59 @@
 
 <head>
 
- 
-  <header>Train Time</header>
-
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
   <script src="https://www.gstatic.com/firebasejs/6.3.3/firebase-app.js"></script>
   <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
 
 </head>
+
+<body>
+<container class="whole">
+  <!--Train Table-->
+<table class="table table-striped table-dark">
+    <h1 class="text-center">Dark Train App </h1>
+    <thead>
+      <tr>
+        <th scope="col">Train Name</th>
+        <th scope="col">Destination</th>
+        <th scope="col">Frequency (min) </th>
+        <th scope="col">Next Arrival</th>
+        <th scope="col">Minutes Away</th>
+      </tr>
+    </thead>
+    </tbody>
+  </table>
+
+
+  <!--Train Form-->
+  <form>
+    <div class="form-group">
+      <label for="train-name-field">Train Name</label>
+      <input type="train-name" class="form-control" id="train-name-field" placeholder="Enter Train Name">
+    </div>
+
+    <div class="form-group">
+      <label for="destination-field">Destination</label>
+      <input type="text" class="form-control" id="destination-field" placeholder="Enter Destination">
+    </div>
+
+    <div class="form-group">
+        <label for="first-train-field"> First Train</label>
+        <input type="text" class="form-control" id="first-train-field" placeholder="Enter Destination">
+      </div>
+
+    <div class="form-group">
+        <label for="frequency-field">Destination</label>
+        <input type="destination" class="form-control" id="frequency-field" placeholder="Enter Frequency (in min)">
+    </div>
+
+    <button type="submit" class="btn btn-primary" id="enter-train">Submit</button>
+  </form>
+</container>
+
+<script src="javascript.js"></script>
+  </body>
 
